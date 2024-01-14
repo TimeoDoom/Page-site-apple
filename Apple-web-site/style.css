@@ -1,0 +1,217 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+header {
+  background-color: #1d1d1f;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.165);
+}
+header .bg {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  justify-content: space-between;
+  font-size: 12px;
+  margin: 0 auto;
+  max-width: 980px;
+  height: 52px;
+  background-color: #1d1d1f;
+}
+header .bg h1 {
+  font-size: 21.1px;
+  color: #efefef;
+  font-weight: 400;
+}
+header .bg .right {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+header .bg .right ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+header .bg .right ul li {
+  cursor: pointer;
+}
+header .bg .right ul li:hover {
+  color: #2d96fe;
+}
+header .bg .right button {
+  width: 65px;
+  height: 24px;
+  border-radius: 40px;
+  border: none;
+  background-color: #0071e3;
+  color: white;
+  cursor: pointer;
+  font-weight: lighter;
+}
+header .bg .right button:hover {
+  background-color: #007bf6;
+}
+
+.first-content {
+  position: relative;
+  z-index: 999;
+}
+.first-content img {
+  margin: auto;
+  display: flex;
+  width: 100%;
+}
+.first-content .center {
+  max-width: 898px;
+  text-align: center;
+  margin: auto;
+  display: block;
+  margin-top: -200px;
+}
+.first-content .center h3 {
+  font-size: 32px;
+  font-weight: 400;
+}
+.first-content .center h1 {
+  font-size: 96px;
+  background: radial-gradient(#eff1ff, black 80%);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  position: relative;
+  background-position: 50% 75%;
+  background-size: 100% 200%;
+}
+.first-content .center p {
+  margin-top: 30px;
+  font-size: 32px;
+  color: #a1a1a6;
+}
+.first-content .center .price {
+  margin-top: 45px;
+  color: white;
+}
+.first-content .center .lecture {
+  display: flex;
+  align-items: center;
+  color: #2997ff;
+  gap: 10px;
+  justify-content: center;
+  margin-top: 45px;
+}
+.first-content .center .lecture a {
+  font-size: 21px;
+  text-decoration: none;
+  color: #2997ff;
+}
+.first-content .center .lecture a:hover {
+  text-decoration: underline;
+}
+.first-content .center .lecture img {
+  width: 25px;
+}
+
+.puce {
+  text-align: center;
+  margin-top: 65px;
+}
+.puce .bgGradi {
+  background: linear-gradient(90deg, #26062d 36%, rgb(26, 14, 57) 56%, rgb(15, 26, 70) 66%);
+  padding-top: 75px;
+  padding-bottom: 200px;
+}
+.puce .bgGradi h1 {
+  font-size: 75px;
+  font-weight: 500;
+  position: relative;
+  z-index: 999;
+}
+.puce .bgGradi .flex {
+  display: flex;
+  justify-content: center;
+  font-size: 19px;
+  font-weight: 500;
+}
+.puce .bgGradi .flex .right {
+  background-image: linear-gradient(90deg, #91d1f1 0%, #25a5e6 46.67%, #252fff 150%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.puce .bgGradi .flex .right p {
+  margin-top: -65px;
+}
+.puce .bgGradi .flex .left {
+  background-image: linear-gradient(90deg, #f0a72f 0%, #ec6c33 31.6%, #e34534 69.81%, #cd18c2);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.puce .bgGradi .flex .left p {
+  margin-top: -65px;
+}
+.puce .bgGradi .explication {
+  color: #a1a1a6;
+  max-width: 900px;
+  margin: auto;
+  font-size: 28px;
+  margin-top: 100px;
+  margin-bottom: 70px;
+}
+.puce .bgGradi .border {
+  background: linear-gradient(110deg, #e34534, #cd18c2, #25a5e6, #252fff 115%);
+  border-radius: 400px;
+  width: 334px;
+  padding: 2px;
+  justify-content: center;
+  margin: auto;
+  position: relative;
+  z-index: 999;
+}
+.puce .bgGradi .border .btn {
+  align-items: center;
+  display: flex;
+  background-color: #000;
+  border-radius: 400px;
+  width: 330px;
+  height: 50px;
+  gap: 10px;
+  justify-content: center;
+  font-size: 21px;
+  cursor: pointer;
+}
+.puce .bgGradi .border .btn:hover {
+  background: white;
+}
+.puce .bgGradi .border:hover {
+  background: white;
+  color: black;
+  transition: all 0.4s ease-in-out;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  color: white;
+  background-color: #000;
+}
+
+.ombre {
+  position: relative;
+  background-color: rgb(0, 0, 0);
+  width: 100%;
+  height: 76px;
+  box-shadow: 10px 100px 100px 100px rgba(0, 0, 0, 0.949);
+}
+
+.ombre2 {
+  position: relative;
+  background-color: rgb(0, 0, 0);
+  width: 100%;
+  height: 76px;
+  box-shadow: 0px -100px 100px 100px rgba(0, 0, 0, 0.949);
+}
+
+/*# sourceMappingURL=style.css.map */

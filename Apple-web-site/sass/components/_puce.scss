@@ -1,0 +1,110 @@
+@mixin grianteText {
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  p {
+    margin-top: -65px;
+  }
+}
+
+@mixin center {
+  align-items: center;
+  display: flex;
+}
+
+.puce {
+  text-align: center;
+  margin-top: 65px;
+
+  .bgGradi {
+    background: linear-gradient(
+      90deg,
+      #26062d 36%,
+      rgba(26, 14, 57, 1) 56%,
+      rgba(15, 26, 70, 1) 66%
+    );
+    padding-top: 75px;
+    padding-bottom: 200px;
+
+    h1 {
+      font-size: 75px;
+      font-weight: 500;
+      position: relative;
+      z-index: 999;
+    }
+
+    .flex {
+      display: flex;
+      justify-content: center;
+      font-size: 19px;
+      font-weight: 500;
+
+      .right {
+        background-image: linear-gradient(
+          90deg,
+          #91d1f1 0%,
+          #25a5e6 46.67%,
+          #252fff 150%
+        );
+        @include grianteText();
+      }
+      .left {
+        background-image: linear-gradient(
+          90deg,
+          #f0a72f 0%,
+          #ec6c33 31.6%,
+          #e34534 69.81%,
+          #cd18c2
+        );
+        @include grianteText();
+      }
+    }
+
+    .explication {
+      color: #a1a1a6;
+      max-width: 900px;
+      margin: auto;
+      font-size: 28px;
+      margin-top: 100px;
+      margin-bottom: 70px;
+    }
+
+    .border {
+      background: linear-gradient(
+        110deg,
+        #e34534,
+        #cd18c2,
+        #25a5e6,
+        #252fff 115%
+      );
+      border-radius: 400px;
+      width: 334px;
+      padding: 2px;
+      justify-content: center;
+      margin: auto;
+      position: relative;
+      z-index: 999;
+
+      .btn {
+        @include center();
+        background-color: #000;
+        border-radius: 400px;
+        width: 330px;
+        height: 50px;
+        gap: 10px;
+        justify-content: center;
+        font-size: 21px;
+        cursor: pointer;
+        &:hover {
+          background: white;
+        }
+      }
+      &:hover {
+        background: white;
+        color: black;
+        transition: all 0.4s ease-in-out;
+      }
+    }
+  }
+}
